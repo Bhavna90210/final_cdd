@@ -16,7 +16,7 @@ app.add_middleware(
 )
 
 # Load your trained model
-model = joblib.load("model.pkl")
+model = joblib.load("qsar_model.pkl")
 
 @app.post("/predict")
 async def predict(data: dict):
