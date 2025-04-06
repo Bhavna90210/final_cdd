@@ -3,7 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import joblib
 import numpy as np
 import uvicorn
+import os
 
+
+print("Files in working directory:", os.listdir("."))
 app = FastAPI()
 
 # Enable CORS for frontend access
